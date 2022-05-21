@@ -1,0 +1,72 @@
+@import "../../common/collors";
+
+.header {
+  display: grid;
+  grid-area: header;
+  width: 100%;
+
+  &
+  nav {
+    height: 70px;
+    display: grid;
+    grid-auto-flow: column;
+
+    .logo {
+      -webkit-transform: translate(-40%, 15%);
+      -moz-transform: translate(-40%, 15%);
+      transform: translate(-40%, 15%);
+    }
+  }
+
+  &
+  ul {
+
+    -webkit-transform: translate(-40%, 15%);
+    -moz-transform: translate(-40%, 15%);
+    transform: translate(10%, 40%);
+    display: grid;
+    grid-template: 1fr / repeat(3,100px);
+    grid-auto-flow: column;
+    list-style-type: none;
+    text-align: center;
+
+    &
+    li {
+      font-size: large;
+
+      a:active {
+        color: $li-color !important;
+        border-bottom: 2px solid $li-color;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+//!cartPart
+.cartButton {
+  position: absolute;
+  top: 30px;
+  left: 1100px;
+  //border: 1px solid blue;
+
+}
+
+//!cartPart
+.cart {
+  position: absolute;
+  left: 60px;
+  top: 2px;
+}
+
+//!currencyPart
+.rate {
+
+}
+
+select {
+  background-color: transparent;
+  border: 0px solid;
+
+
+}
