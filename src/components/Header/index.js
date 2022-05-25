@@ -9,9 +9,9 @@ const Header = () => {
             <header className={s.header}>
           <nav>
               <ul>
-                  <li><NavLink to ='/'>WOMEN</NavLink></li>
-                  <li><NavLink to ='/'>MEN</NavLink></li>
-                  <li><NavLink to ='/'>KIDS</NavLink></li>
+                  <li><NavLink to ='/'>woman</NavLink></li>
+                  <li><NavLink to ='/'>men</NavLink></li>
+                  <li><NavLink to ='/'>kids</NavLink></li>
               </ul>
               <div className={s.logo}>
                   <img src="/img/logo.svg" alt="logo"/>

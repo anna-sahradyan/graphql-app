@@ -1,0 +1,17 @@
+{
+  "categories": [
+    {
+      "id": "all1",
+      "name": "all"
+    },
+    {
+      "id": "tech2",
+      "name": "tech"
+    },
+    {
+      "id": "clothes3",
+      "name": "clothes"
+    }
+  ]
+}
+
