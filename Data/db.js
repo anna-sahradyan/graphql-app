@@ -119,8 +119,8 @@
     }
 
 ];
- // exports.db = {
- //     products,
- //     categories,
- //
- // };
+ module.exports = {
+     products,
+     categories,
+
+ };
