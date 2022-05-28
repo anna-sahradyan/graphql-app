@@ -1,0 +1,29 @@
+{
+  "colors": [
+    {
+      "id": "c1",
+      "colorId": "1a",
+      "name": ["#44FF03","#03FFF7","#030BFF","#FFFFFF","#000000"]
+    },
+    {
+      "id": "c2",
+      "colorId": "3a",
+      "name":["#44FF03","#03FFF7","#030BFF","#000000"]
+    },
+    {
+      "id": "c3",
+      "colorId": "4a",
+      "name":["#03FFF7","#030BFF","#FFFFFF","#000000"]
+    },
+    {
+      "id": "c4",
+      "colorId": "3a",
+      "name": ["#44FF03","#03FFF7","#FFFFFF","#000000"]
+    },
+    {
+      "id": "c5",
+      "colorId": "2a",
+      "name": ["#44FF03","#03FFF7","#030BFF"]
+    }
+  ]
+}

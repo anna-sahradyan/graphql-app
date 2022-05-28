@@ -1,12 +1,15 @@
-import React from 'react';
 import ProductsList from "../../container/Products/ProductsList";
+import React, {Component} from 'react';
 
-const Main = () => {
-    return (
-        <>
-            <ProductsList/>
-        </>
-    );
-};
+class Main extends Component {
+    render() {
+        return (
+            <>
+                <ProductsList/>
+
+            </>
+        );
+    }
+}
 
 export default Main;

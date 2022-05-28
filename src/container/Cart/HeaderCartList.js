@@ -1,13 +1,16 @@
-import React from 'react';
 import s from '../../components/Header/Header.module.scss';
-const HeaderCartList = () => {
-    return (
-        <>
-<div className={s.cart}>
-    <img src="/img/cart1.svg" alt="cart"/>
-</div>
-        </>
-    );
-};
+import React, {Component} from 'react';
+
+class HeaderCartList extends Component {
+    render() {
+        return (
+            <>
+                <div className={s.cart}>
+                    <img src="/img/cart1.svg" alt="cart"/>
+                </div>
+            </>
+        );
+    }
+}
 
 export default HeaderCartList;

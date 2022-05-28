@@ -1,12 +1,13 @@
-import React from 'react';
-import Products from "../../components/Product/Products";
+import React, {Component} from 'react';
 
-const ProductsList = () => {
-    return (
-        <>
-          <Products/>
-        </>
-    );
-};
+class ProductsList extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        );
+    }
+}
 
 export default ProductsList;

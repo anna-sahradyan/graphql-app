@@ -1,14 +1,22 @@
-const {products} = require("../Data/data.json");
-const {categories} = require("../Data/categories.json");
-exports.Query= {
-        products: (parent, args, context) => products,
-        product(parent, args, context) {
-        return products.find(item => item.id === args.id);
+exports.Query = {
+    products: (parent, {filter}, {products}) => {
+        let filterProducts = products;
+        if (filter) {
+            if (filter.inStock === true) {
+                filterProducts = filterProducts.filter(item => {
+                    return item.inStock
+                })
+            }
+        }
+        return filterProducts
+    },
+    product(parent, {id}, {products}) {
+        return products.find(item => item.id === id);
 
     },
-    categories: (parent, args, context) => categories,
-        category(parent, args, context) {
-        return categories.find((item) => item.id === args.id);
+    categories: (parent, args, {categories}) => categories,
+    category(parent, {id}, {categories}) {
+        return categories.find((item) => item.id === id);
     },
 
 

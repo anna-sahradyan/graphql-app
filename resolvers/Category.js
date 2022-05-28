@@ -1,8 +1,15 @@
-const {products} = require("../Data/data.json");
-exports.Category={
-    products(parent, args, context) {
-        const categoryId = parent.id;
-        return products.filter((item) => item.categoryId === categoryId);
+exports.Category = {
+    products({id: categoryId}, {filter}, {products}) {
+        const categoryProducts = products.filter((item) => item.categoryId === categoryId);
+        let filterCategoryProducts = categoryProducts;
+        if (filter) {
+            if (filter.inStock === true) {
+                filterCategoryProducts= filterCategoryProducts.filter(item => {
+                    return item.inStock
+                })
+            }
+        }
+        return filterCategoryProducts
     },
 
 };
